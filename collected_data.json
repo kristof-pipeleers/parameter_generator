@@ -1,0 +1,58 @@
+[
+  {
+    "company_name": "Shimano",
+    "answer": {
+      "name": "get_company_category",
+      "arguments": "{\"start-up\":false,\"scale-up\":false,\"KMO\":false,\"corporate\":true}"
+    }
+  },
+  {
+    "company_name": "Shimano",
+    "answer": {
+      "name": "get_company_activities",
+      "arguments": "{\"Bio-economy\": 0, \"Mining\": 0, \"Component\": 2, \"Part\": 2, \"Assembly\": 2, \"Distribution\": 2, \"Design\": 2, \"Energy recovery\": 0, \"Waste\": 0}"
+    }
+  },
+  {
+    "company_name": "Ridley bikes",
+    "answer": {
+      "name": "get_company_category",
+      "arguments": "{\"start-up\":false,\"scale-up\":false,\"KMO\":true,\"corporate\":false}"
+    }
+  },
+  {
+    "company_name": "Ridley bikes",
+    "answer": {
+      "name": "get_company_activities",
+      "arguments": "{\"Bio-economy\": 0, \"Mining\": 2, \"Component\": 2, \"Part\": 2, \"Assembly\": 2, \"Distribution\": 1, \"Design\": 2, \"Energy recovery\": 0, \"Waste\": 1}"
+    }
+  },
+  {
+    "company_name": "Schwalbe",
+    "answer": {
+      "name": "get_company_category",
+      "arguments": "{\"start-up\":true,\"scale-up\":false,\"KMO\":false,\"corporate\":false}"
+    }
+  },
+  {
+    "company_name": "Schwalbe",
+    "answer": {
+      "name": "get_company_activities",
+      "arguments": "{\"Mining\":1,\"Component\":2,\"Part\":2,\"Assembly\":2,\"Distribution\":1,\"Design\":2,\"Energy recovery\":1,\"Waste\":2}"
+    }
+  },
+  {
+    "company_name": "Gazelle bikes",
+    "answer": {
+      "name": "get_company_category",
+      "arguments": "{\"start-up\":false,\"scale-up\":true,\"KMO\":false,\"corporate\":false}"
+    }
+  },
+  {
+    "company_name": "Gazelle bikes",
+    "answer": {
+      "name": "get_company_activities",
+      "arguments": "{\"Mining\":0,\"Component\":2,\"Part\":2,\"Assembly\":2,\"Distribution\":2,\"Design\":2,\"Energy recovery\":0,\"Waste\":1}"
+    }
+  }
+]

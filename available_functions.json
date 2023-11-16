@@ -1,0 +1,297 @@
+{
+"get_company_category": 
+    {
+        "name": "get_company_category",
+        "description": "retrieves the category the company belongs to from the search index based on the parameters provided.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "start-up": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is a start-up"
+                },
+                "scale-up": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is a scale-up"
+                },
+                "KMO": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is a KMO"
+                },
+                "corporate": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is a corporate"
+                }
+            },
+            "required": [
+                "start-up",
+                "scale-up",
+                "KMO",
+                "corporate"
+            ]
+        }
+    },
+"get_organization_type": 
+    {
+        "name": "get_organization_type",
+        "description": "retrieves the type of organization based on specific parameters.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "Sociale organisatie": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the organization is a Sociale organisatie"
+                },
+                "VZW": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the organization is a VZW"
+                },
+                "Reguliere organisatie": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the organization is a Reguliere organisatie"
+                },
+                "Overheidsinstantie": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the organization is an Overheidsinstantie"
+                }
+            },
+            "required": [
+                "Sociale organisatie",
+                "VZW",
+                "Reguliere organisatie",
+                "Overheidsinstantie"
+            ]
+        }
+    },
+"get_customer_channel": 
+    {
+        "name": "get_customer_channel",
+        "description": "retrieves the customer channel of the company: business to business (B2B) or business to customer (B2C)",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "B2B": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the customer channel is business to business"
+                },
+                "B2C": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the customer channel is business to customer"
+                }
+            },
+            "required": [
+                "B2B",
+                "B2C"
+            ]
+        }
+    },
+"get_company_offering":
+    {
+        "name": "get_company_offering",
+        "description": "retrieves the type of offerings the company provides: service or product.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "service": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company offers services"
+                },
+                "product": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company offers products"
+                }
+            },
+            "required": [
+                "service",
+                "product"
+            ]
+        }
+    },
+"get_company_activities": {
+    "name": "get_company_activities",
+    "description": "Provides a score for following business activities for the company: Bio-economy, Mining, Component, Part, Assembly, Distribution, Design, Energy recovery, and Waste. Provide a score between 0 and 2, where score 0 represents 'not applicable' score 1 represents 'moderately applicable' score 2 represents 'highly applicable'.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "Bio-economy": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Bio-economy"
+            },
+            "Mining": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Mining"
+            },
+            "Component": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Components"
+            },
+            "Part": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Parts"
+            },
+            "Assembly": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Assembly"
+            },
+            "Distribution": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Distribution"
+            },
+            "Design": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Design"
+            },
+            "Energy recovery": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Energy recovery"
+            },
+            "Waste": {
+                "type": "number",
+                "description": "score between 0 and 2 for the extent to which the company's main business activity is Waste"
+            }
+        },
+        "required": [
+            "Bioeconomy",
+            "Mining",
+            "Component",
+            "Part",
+            "Assembly",
+            "Distribution",
+            "Design",
+            "Energy recovery",
+            "Waste"
+        ]
+    }
+},
+"get_company_components": 
+    {
+        "name": "get_company_components",
+        "description": "Provides a score for following components for the company: Mechanical static, Mechanical dynamic, Electrical static, Electrical dynamic, Thermal static, Thermal dynamic, Electronic static and Electronic dynamic. Provide a score between 0 and 2, where score 0 represents 'not applicable' score 1 represents 'moderately applicable' score 2 represents 'highly applicable'.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "Mechanical static": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Mechanical static components"
+                },
+                "Mechanical dynamic": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Mechanical dynamic components"
+                },
+                "Electrical static": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Electrical static components"
+                },
+                "Electrical dynamic": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Electrical dynamic components"
+                },
+                "Thermal static": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Thermal static components"
+                },
+                "Thermal dynamic": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Thermal dynamic components"
+                },
+                "Electronic static": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Electronic static components"
+                },
+                "Electronic dynamic": {
+                    "type": "number",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Electronic dynamic components"
+                }
+            },
+            "required": [
+                "Mechanical static",
+                "Mechanical dynamic",
+                "Electrical static",
+                "Electrical dynamic",
+                "Thermal static",
+                "Thermal dynamic",
+                "Electronic static",
+                "Electronic dynamic"
+            ]
+        }
+    },
+"get_bike_types":
+    {
+        "name": "get_bike_types",
+        "description": "retrieves the type of bikes the company is engaged in: city bike, sports bike or electric bike. ",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "city bike": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is engaged in city bikes"
+                },
+                "sports bike": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is engaged in sports bikes"
+                },
+                "electric bike": {
+                    "type": "boolean",
+                    "description": "boolean should be true if the company is engaged in electric bikes"
+                }
+            },
+            "required": [
+                "city bike",
+                "sports bike",
+                "electric bike"
+            ]
+        }
+    },
+"get_sustainable_strategy":
+    {
+        "name": "get_sustainable_strategy",
+        "description": "provides a score for to what extend the company is engaged in following sustainable strategies: eco-efficiency, value creation, usage optimization, lifespan extension, cascading processes, community building, capacity building, regenerative principles.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "Eco-efficiency": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Eco-efficiency"
+                },
+                "Value creation": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Value creation"
+                },
+                "Usage optimization": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Usage optimization"
+                },
+                "Lifespan extension": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Lifespan extension"
+                },
+                "Cascading processes": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Cascading processes"
+                },
+                "Community building": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Community building"
+                },
+                "Capacity building": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Capacity building"
+                },
+                "Regenerative principles": {
+                    "type": "integer",
+                    "description": "score between 0 and 2 for the extent to which the company is engaged in Regenerative principles"
+                }
+            },
+            "required": [
+                "Eco-efficiency, value creation, usage optimization, lifespan extension, cascading processes, community building, capacity building, regenerative principles",
+                "Value creation",
+                "Usage optimization",
+                "Lifespan extension",
+                "Cascading processes",
+                "Community building",
+                "Capacity building",
+                "Regenerative principles"
+            ]
+        }
+    }
+}

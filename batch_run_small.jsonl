@@ -1,0 +1,2 @@
+{"function_call": "get_company_category", "question": "${company_name} company category", "LLM_question": "To which business category does the ${company_name} company belong: start-up, scape-up, SME or corporate?"}
+{"function_call": "get_company_activities", "question": "${company_name} company activities", "LLM_question": "Provide a score for following business activities for the company ${company_name}: Bio-economy, Mining, Component, Part, Assembly, Distribution, Design, Energy recovery, and Waste."}

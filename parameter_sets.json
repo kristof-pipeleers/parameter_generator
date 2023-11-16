@@ -1,0 +1,66 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "get_company_category",
+            "description": "retrieves the category the company belongs to from the search index based on the parameters provided.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "get_customer_channel",
+            "description": "retrieves the customer channel of the company: business to business (B2B) or business to customer (B2C)",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_organization_type",
+            "description": "retrieves the type of organization the company provides: Sociale organisatie, VZW, Reguliere organisatie or Overheidsinstantie",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_company_offering",
+            "description": "retrieves the type of offerings the company provides: service or product.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_company_activities",
+            "description": "Provide a score for following business activities for the company: Bio-economy, Mining, Component, Part, Assembly, Distribution, Design, Energy recovery, and Waste. Provide a score between 0 and 2, where score 0 represents 'not applicable' score 1 represents 'moderately applicable' score 2 represents 'highly applicable'.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_company_components",
+            "description": "Provide a score for following components for the company: Mechanical static, Mechanical dynamic, Electrical static, Electrical dynamic, Thermal static, Thermal dynamic, Electronic static and Electronic dynamic. Provide a score between 0 and 2, where score 0 represents 'not applicable' score 1 represents 'moderately applicable' score 2 represents 'highly applicable'.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_bike_types",
+            "description": "retrieves the type of bikes the company is engaged in: city bike, sports bike or electric bike",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_sustainable_strategy",
+            "description": "provides a score for to what extend the company is engaged in following sustainable strategies: eco-efficiency, value creation, usage optimization, lifespan extension, cascading processes, community building, capacity building, regenerative principles.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    }
+]

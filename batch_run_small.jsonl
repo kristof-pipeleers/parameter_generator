@@ -1,2 +1,2 @@
-{"function_call": "get_company_category", "question": "${company_name} company category", "LLM_question": "To which business category does the ${company_name} company belong: start-up, scape-up, SME or corporate?"}
-{"function_call": "get_company_activities", "question": "${company_name} company activities", "LLM_question": "Provide a score for following business activities for the company ${company_name}: Bio-economy, Mining, Component, Part, Assembly, Distribution, Design, Energy recovery, and Waste."}
+{"function_call": "get_company_category", "question": "${company_name} company category", "LLM_question": "To which company category does the ${company_name} company belong: start-up, scape-up, SME or corporate?"}
+{"function_call": "get_organization_type", "question": "${company_name} organization type", "LLM_question": "Retrieve the organization type the company ${company_name} provides: Sociale organisatie, VZW, Reguliere organisatie or Overheidsinstantie"}
